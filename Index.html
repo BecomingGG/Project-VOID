@@ -19,13 +19,55 @@
     />
   </head>
   <body>
-    <header>
+    <header class="flex-center">
       <nav>
-        <div class="button"><a href="#">Subscribe </a></div>
-        <div><a href="./Index.html">VOID</a></div>
-        <input type="checkbox" id="check" />
+        <div>
+          <a href="subscribe" class="button , flex-center">Subscribe </a>
+        </div>
+        <div>
+          <span><a href="./Index.html" class="logo">VOID</a></span>
+        </div>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">MENU</label>
+          <label for="check" class="checkburg"><i class="fa-solid fa-bars"></i></label>
+        <div class="nav-items">
+          <section class="top">
+            
+              <span><a href="./Index.html" class="logo">VOID</a></span>
+              <div class="flex-center"><input type="checkbox" id="check" />
+              <label for="check" class="checkbtn">CLOSE</label>
+            </div>
+            
+          </section>
+          <section class="bottom">
+            <aside class="left flex-center">
+            <div class=" leftbox">
+              <div>
+              <ul>
+                <li><a href="#">GRAPHIC DESIGN</a></li>
+                <li><a href="#">ART</a></li>
+                <li><a href="#">PHOTOGRAPHY</a></li>
+                <li><a href="#">INTERVIEWS</a></li>
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            </div>
+          </div>
+           </aside>
+            <aside class="right">
+              <p>Sign up to fill that inbox void.</p>
+              <label for="subscribe" class="subbutton"><p>Email*</p><a href="#" class="flex-center"> Subscribe</a></label>
+              <input type="text" id="subscribe">
+            </aside>
+          </section>
+        </div>
       </nav>
-    </header>
+    </header> 
     <script
       src="https://kit.fontawesome.com/8148751d35.js"
       crossorigin="anonymous"

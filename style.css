@@ -16,3 +16,179 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+header {
+    width: 100%;
+    height: 123px;
+    background-color: white;
+}
+
+header nav {
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .button {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+    color: var(--active-color);
+    text-decoration: none;
+    width: 140px;
+    height: 39px;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+
+header nav .button:hover{
+    color: white;
+    background-color: var(--active-color);
+}
+
+header nav span .logo {
+    color: var(--active-color);
+    font-size: 4.375rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px;
+}
+
+header nav .checkbtn {
+    font-size: 1.688rem;
+    font-weight: bold;
+    color: var(--active-color);
+    cursor: pointer;
+    line-height: 7.5rem;
+}
+
+header nav .checkburg {
+    display: none;
+}
+
+header nav #check {
+    display: none;
+}
+
+.nav-items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: -100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    transition: all 0.1s;
+    background-color: black;
+    z-index: 10;
+}
+
+header nav #check:checked ~ .nav-items {
+    top: 0px;
+    left: 0px;
+}
+
+header .nav-items .top {
+    display: grid;
+    grid-template-columns:3fr 2fr;
+}
+
+header .nav-items  span .logo {
+    color: white;
+    font-size: 4.688;
+    display: flex;
+    justify-content:flex-end;
+    margin: 30px 20px;
+}
+
+header .nav-items .checkbtn {
+    color: white;
+    font-size: 1.688;
+}
+
+header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover {
+    color: var(--hover-color);
+    transition: 0.5 ease;
+}
+
+header .nav-items .bottom {
+    width: 93%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+header .nav-items .bottom .left ul {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    row-gap: 2rem;
+}
+
+header .nav-items .bottom .left ul li a {
+    color: white;
+    font-size: 1.5rem;
+    row-gap: 0.5rem;
+    text-decoration: none;
+}
+
+header .nav-items .bottom .left .leftbox {
+    display: grid;
+    row-gap: 4rem;
+}
+
+header .nav-items .bottom .left .social {
+    display: flex;
+    gap: 2rem;
+}
+
+header .nav-items .bottom .left .social a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+header .nav-items .bottom .right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    width: 65%;
+}
+
+header .nav-items .bottom .right p {
+    color: white;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+header .nav-items .bottom .right .subbutton p {
+    font-size: 0.875rem;
+}
+
+header .nav-items .bottom .right input {
+    background-color: var(--active-color);
+    border: 0px;
+    height: 2rem;
+    border-bottom: 1px solid white;
+    padding: 3px 3px 3px 0px;
+}
+
+header .nav-items .bottom .right .subbutton {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav-items .bottom .right .subbutton a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+header .nav-items .bottom .right input:hover {
+    border-bottom: 2px solid white;
+}
