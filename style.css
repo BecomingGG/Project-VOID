@@ -17,6 +17,17 @@ body {
     align-items: center;
 }
 
+.text {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+}
+
+header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover, main .intro article .right a:hover, main .info aside a:hover, main .popular aside a:hover {
+    color: var(--hover-color);
+    transition: 0.5 ease;
+}
+
 header {
     width: 100%;
     height: 123px;
@@ -108,11 +119,6 @@ header .nav-items .checkbtn {
     font-size: 1.688;
 }
 
-header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover {
-    color: var(--hover-color);
-    transition: 0.5 ease;
-}
-
 header .nav-items .bottom {
     width: 93%;
     display: grid;
@@ -190,5 +196,204 @@ header .nav-items .bottom .right .subbutton a {
 }
 
 header .nav-items .bottom .right input:hover {
+    border-bottom: 2px solid white;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 1.5rem;
+}
+
+main section {
+    width: 93%;
+}
+
+main .toptext h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--active-color);
+    margin: 0px;
+    padding: 0px;
+}
+
+main .intro {
+    height: 926px;
+}
+main .intro article {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--active-color);
+}
+
+main .intro article .left {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.wixstatic.com/media/c837a6_83801c4dfb78493b93f130ab40fe94a8~mv2.jpg/v1/fill/w_888,h_1158,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_83801c4dfb78493b93f130ab40fe94a8~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .intro article .right div{
+    max-width: 460px;
+}
+
+main .intro article .right h2, main .intro article .right p, main .intro article .right a {
+    color: white;
+    text-decoration: none;
+}
+
+main .intro article .right h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+main .intro article .right p,main .info aside p, main .popular aside p {
+    font-size: 0.75rem;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+    word-spacing: 0.2rem;
+    margin: 15px 10px;
+}
+
+main .intro article .right a {
+    font-size: 3.438rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
+}
+
+.carousel {
+    display: none;
+}
+
+main .info {
+    width: 93%;
+    height: 638px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+main .info aside img {
+    max-width: 332px;
+}
+
+main .info aside a {
+    font-size: 1.313rem;
+    font-weight: 700;
+    color: var(--active-color);
+    text-decoration: none;
+}
+
+main .story {
+    width: 100%;
+    height: 729px;
+    background-image: url('https://static.wixstatic.com/media/84770f_6ead7869ff5a4842aee87b0d58d83504~mv2.jpg/v1/fill/w_1899,h_911,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_6ead7869ff5a4842aee87b0d58d83504~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+main .popular {
+    width: 93%;
+    height: 863px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+main .popular aside img {
+    max-width: 453px;
+    max-height: 604px;
+}
+
+main .popular aside a {
+    font-size: 1.313rem;
+    font-weight: 700;
+    color: var(--active-color);
+    text-decoration: none;
+}
+
+main .popular aside a p {
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    margin: 10px 0px;
+    
+}
+
+main .sign {
+    height: 893px;
+}
+
+main .sign article {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--active-color);
+}
+
+main .sign article .right {
+    background-image: url('https://static.wixstatic.com/media/11062b_7d10a5acdb1549cc99c521c5979a3ac7~mv2.jpg/v1/fill/w_710,h_893,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_7d10a5acdb1549cc99c521c5979a3ac7~mv2.jpg');
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+
+}
+
+main .sign article .left {
+    /* display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px; */
+    width: 500px;
+}
+
+main .sign article .left p {
+    color: white;
+    font-weight: 600;
+    font-size: 3.438rem;
+}
+
+main .sign article .left .subbutton p {
+    font-size: 0.875rem;
+    font-family: var(--secondary-font);
+}
+
+main .sign article .left input {
+    width: 100%;
+    background-color: var(--active-color);
+    border: 0px;
+    height: 2rem;
+    border-bottom: 1px solid white;
+    padding: 3px 3px 3px 0px;
+}
+
+main .sign article .left .subbutton {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sign article .left .subbutton a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.125;
+    text-decoration: none;
+    
+}
+
+main .sign article .left input:hover {
     border-bottom: 2px solid white;
 }
