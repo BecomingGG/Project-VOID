@@ -23,7 +23,7 @@ body {
     row-gap: 100px;
 }
 
-header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover, main .intro article .right a:hover, main .info aside a:hover, main .popular aside a:hover {
+header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover, main .intro article .right a:hover, main .info aside a:hover, main .popular aside a:hover, main .sign article .left .subbutton a:hover {
     color: var(--hover-color);
     transition: 0.5 ease;
 }
@@ -195,7 +195,7 @@ header .nav-items .bottom .right .subbutton a {
     
 }
 
-header .nav-items .bottom .right input:hover {
+header .nav-items .bottom .right input:hover, main .sign article .left input:hover {
     border-bottom: 2px solid white;
 }
 
@@ -254,7 +254,7 @@ main .intro article .right h2 {
 
 }
 
-main .intro article .right p,main .info aside p, main .popular aside p {
+main .intro article .right p,main .info aside p, main .popular aside p, main .story .bottom p {
     font-size: 0.75rem;
     font-weight: 300;
     font-family: var(--secondary-font);
@@ -301,6 +301,44 @@ main .story {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 2rem;
+    
+}
+
+main .story .top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main .story .bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main .story .bottom a {
+    color: white;
+    font-size: 3.438rem;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 4.5rem;
+    text-align: center;
+    max-width: 861px;
+}
+
+main .story .bottom a:hover {
+    color: var(--active-color);
+    transition: 0.5 ease;
+}
+
+main .story h3 {
+    color: white;
+    font-size: 1.5rem;
 
 }
 
@@ -354,21 +392,25 @@ main .sign article .right {
 }
 
 main .sign article .left {
-    /* display: flex;
     flex-direction: column;
-    position: relative;
-    top: 150px; */
-    width: 500px;
+    gap: 20px;
+
 }
 
-main .sign article .left p {
+main .sign article .left .void {
+    max-width: 400px;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3.438rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
 }
 
 main .sign article .left .subbutton p {
     font-size: 0.875rem;
+    color: white;
+    font-weight: 200;
+    min-width: 300px;
     font-family: var(--secondary-font);
 }
 
@@ -388,12 +430,19 @@ main .sign article .left .subbutton {
 
 main .sign article .left .subbutton a {
     color: white;
-    font-weight: 600;
-    font-size: 1.125;
+    font-weight: 700;
+    font-size: 1.125rem;
     text-decoration: none;
     
 }
 
-main .sign article .left input:hover {
-    border-bottom: 2px solid white;
+footer {
+    width: 100%;
+    height: 133px;
+    background-color: var(--active-color);
+}
+
+footer article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
