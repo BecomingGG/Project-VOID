@@ -1,0 +1,37 @@
+:root {
+    --primary-font:'Syne', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+    --active-color:#000000;
+    --hover-color: #E7222c;
+}
+
+main .toptext {
+    justify-content: center;
+}
+
+main .info {
+    width: 93%;
+    height: 828px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+main .toptext h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0px;
+}
+
+.secondpage .info aside {
+    justify-content: flex-start;
+}
+
+.secondpage .info aside a p {
+    font-size: 1rem;
+} 
+
+.secondpage .info aside img {
+    width: 332px;
+    height: 440px;
+}

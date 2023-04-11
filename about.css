@@ -1,0 +1,82 @@
+:root {
+    --primary-font:'Syne', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+    --active-color:#000000;
+    --hover-color: #E7222c;
+}
+
+body {background-color: var(--hover-color);}
+
+header {
+    background-color: transparent;
+}
+
+header nav div .button {
+    background-color: transparent;
+}
+main {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main .about {
+    height: 1472px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+main .about .topleft {
+    background-image: url('https://static.wixstatic.com/media/84770f_e2ef4788547342e998f3a95fed317f20~mv2.jpg/v1/fill/w_866,h_693,al_c,q_85,enc_auto/84770f_e2ef4788547342e998f3a95fed317f20~mv2.jpg');
+    background-repeat: no-repeat;
+    background-position: 8% 7%;
+    background-attachment:fixed;
+}
+
+main .about .bottomleft {
+    background-image: url('https://static.wixstatic.com/media/84770f_e2ef4788547342e998f3a95fed317f20~mv2.jpg/v1/fill/w_866,h_693,al_c,q_85,enc_auto/84770f_e2ef4788547342e998f3a95fed317f20~mv2.jpg');
+    background-repeat: no-repeat;
+    background-position: 8% 0%;
+    background-attachment:fixed;
+}
+
+main .about .topright article, main .about .bottomright article{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+main .about .topright article h1, main .about .bottomright article h1{
+    color: var(--active-color);
+    font-size: 2.375rem;
+    font-weight: 600;
+    word-spacing: 0.2rem;
+    min-width: 480px;
+
+}
+
+main .about .topright article p{
+    max-width: 480px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--secondary-font);
+    color: var(--active-color);
+    
+    
+}
+
+main .about .bottomright .contact {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+main .about .bottomright .contact input {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid black;
+    padding: 3px 3px 3px 0px;
+}
