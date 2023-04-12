@@ -27,7 +27,11 @@ body {
     row-gap: 100px;
 }
 
-header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover, main .intro article .right a:hover, main .info aside a:hover, main .popular aside a:hover, main .sign article .left .subbutton a:hover {
+header nav .checkburg, header nav #check, header .nav-items .bottom .left .menu-button, header .nav-items .bottom .close, .carousel {
+    display: none;
+}
+
+header .nav-items .checkbtn:hover, header .nav-items .bottom .left ul li a:hover, header .nav-items .bottom .right .subbutton a:hover, main .intro article .right a:hover, main .info aside a:hover, main .popular aside a:hover, main .sign article .left .subbutton a:hover, .carousel .carousel-item a, main .information aside a:hover  {
     color: var(--hover-color);
     transition: 0.5 ease;
 }
@@ -59,7 +63,7 @@ header nav .button {
     transition: 0.5s ease;
 }
 
-header nav .button:hover{
+header nav .button:hover, header .nav-items .bottom .left .leftbox ul .menu-button:hover {
     color: white;
     background-color: var(--active-color);
 }
@@ -78,14 +82,6 @@ header nav .checkbtn {
     color: var(--active-color);
     cursor: pointer;
     line-height: 7.5rem;
-}
-
-header nav .checkburg {
-    display: none;
-}
-
-header nav #check {
-    display: none;
 }
 
 .nav-items {
@@ -264,7 +260,7 @@ main .intro article .right h2 {
 
 }
 
-main .intro article .right p,main .info aside p, main .popular aside p, main .story .bottom p {
+main .intro article .right p,main .info aside p, main .popular aside p, main .story .bottom p, .carousel .carousel-item p, main .information aside p {
     font-size: 0.75rem;
     font-weight: 300;
     font-family: var(--secondary-font);
@@ -281,11 +277,13 @@ main .intro article .right a {
 
 }
 
-.carousel {
-    display: none;
+.carousel .carousel-item img {
+    max-width: 1000px;
+    max-height: 426px;
+    place-items: center;
 }
 
-main .info {
+main .info, main .information {
     width: 93%;
     height: 638px;
     display: grid;
@@ -293,17 +291,17 @@ main .info {
     gap: 2rem;
 }
 
-main .info aside,main .popular aside {
+main .info aside,main .popular aside, main .information aside {
     
     flex-direction: column;
     justify-content: flex-start;
 }
 
-main .info aside img {
+main .info aside img, main .information aside img {
     max-width: 332px;
 }
 
-main .info aside a {
+main .info aside a, .carousel .carousel-item a, main .information aside a {
     font-size: 1.313rem;
     font-weight: 700;
     color: var(--active-color);
@@ -403,7 +401,6 @@ main .sign article .right {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
 
 }
 
