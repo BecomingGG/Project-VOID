@@ -143,35 +143,141 @@
         justify-content: flex-end;
         float: right;
     }
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    main .info {
+    main .intro article, main .info, main .sign article, main .about {
         grid-template-columns: 1fr;
+    }
+
+    main .intro article .left {
+        min-height: 400px;
+    }
+
+    main .intro article .right a, header nav span .logo {
+        font-size: 2.5rem;
+    }
+
+    main .popular {
+        max-height: 700px;
+    }
+
+    main .sign article .right {
+        background-position: center;
+        min-height: 500px;
+    }
+
+    main .story .bottom a {
+        font-size: 2rem;
+        max-width: 400px;
+    }
+
+    main .sign {
+        height: 960px;
+    }
+
+    main .sign article {
+        row-gap: 50px;
+    }
+
+    main .sign article .left .void {
+        font-size: 2rem;
+    }
+
+    main .sign article .left .void, main .sign article .left .subbutton p {
+        max-width: 200px;
+    }
+
+    main .sign article .left input {
+        width: 100%;
+    }
+
+    main .sign article .left .subbutton {
+        max-width: 200px;
+        display: grid;
+    }
+
+    main .about .topright article h1, main .about .bottomright article h1 {
+        font-size: 1.5rem;
+    }
+
+    main .about .topright article p, main .about .bottomright .contact label {
+        font-size: 0.8rem;
+    }
+
+    main .about .bottomright .contact{
+        width: 30%;
+    }
+
+    main .about .bottomright article h1 {
+        min-width: 0px;
     }
 
 }
 
+@media screen and (max-width:500px){
+    header nav span .logo {
+        font-size: 2.5rem;
+    }
+    
+    main .popular {
+        grid-template-columns: 1fr;
+        max-height: max-content;
+    }
+
+    main .popular aside img {
+        max-width: 250px;
+        max-height: 260px; ;
+    }
+    main .popular aside a p {
+        display: none;
+    }
+
+    main .sign {
+        margin-top: 300px;
+    }
+    main .sign article .left .subbutton p {
+        min-width: 0px;
+        max-width: 100px;
+    }
+}
+
 @media screen and (max-width: 280px) {
-    /* main .popular {
-        display: none;
+    header nav span .logo, main .intro article .right a, header nav .checkburg, main .story .bottom a, footer .middle .logo {
+        font-size: 1.5rem;
     }
-    main .sign article .left input {
-        display: none;
+    
+    main .intro article .right h2,.carousel .carousel-item a, main .story h3, main .toptext h1, main .sign article .left .void{
+        font-size: 1rem;
     }
-    header nav {
-        display: none;
-    } */
+
+    header .nav-items .bottom .left ul li a, main .popular aside a, main .sign article .left .void, main .sign article .left .subbutton a, footer .right .social a, main .info aside a {
+        font-size: 0.8rem;
+    }
+
+    main .intro article .right p, main .info aside p, main .popular aside p, main .story .bottom p, .carousel .carousel-item p, main .information aside p,footer .left p,.secondpage .info aside a p {
+        font-size: 0.5rem;
+    }
+
+    main .sign {
+        margin-top: 120px;
+    }
+
+    main .sign article {
+        row-gap: 0px;
+    }
+    
+    .secondpage .info aside img, main .about .topright article h1, main .about .bottomright article h1, main .about .topright article p{
+        max-width: 240px;
+    }
+
+    main .about .bottomright article, main .about .topright article{
+        display: block;
+    }
+
+    main .about .bottomleft, main .about .topleft {
+        background-position: center;
+    }
+
+    main .about .topright article h1 {
+        min-width: 0px;
+    }
 }

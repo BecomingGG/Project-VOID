@@ -5,7 +5,9 @@
     --hover-color: #E7222c;
 }
 
-body {background-color: var(--hover-color);}
+body {
+    background-color: var(--hover-color);
+}
 
 header {
     background-color: transparent;
