@@ -305,6 +305,7 @@
 
     .secondpage .info aside img {
         max-width: 260px;
+        min-width: 0px;
     }
     main .info aside {
         max-width: 260px;

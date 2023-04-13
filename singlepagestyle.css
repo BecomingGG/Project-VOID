@@ -63,6 +63,7 @@
 .singlepage .topthread img {
     width: 819.2px;
     height: 661px;
+    object-fit: cover;
 }
 
 .singlepage .topthread .biginfo {
