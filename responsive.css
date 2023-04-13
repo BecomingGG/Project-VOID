@@ -302,6 +302,14 @@
     .singlepage .topthread .toptier .icons {
         font-size: 0.75rem;
     }
+
+    .secondpage .info aside img {
+        max-width: 260px;
+    }
+    main .info aside {
+        max-width: 260px;
+        align-items: start;
+    }
 }
 
 @media screen and (max-width: 280px) {
