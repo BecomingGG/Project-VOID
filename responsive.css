@@ -57,6 +57,13 @@
     footer .middle .logo {
         font-size: 1.813rem;
     }
+
+    .singlepage .bottomthread {
+        width: 90%;
+    }
+    .singlepage .topthread {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -211,6 +218,51 @@
         min-width: 0px;
     }
 
+    main .about .bottomleft {
+        grid-row: 2;
+        background-attachment: scroll;
+        background-position: 8% 18%;
+    }
+
+    main .about .topleft {
+        background-attachment: scroll;
+    }
+
+    .singlepage .topthread {
+        width: 500px;
+    }
+
+    .singlepage .topthread img {
+        width: 320px;
+        height: 286px;
+    }
+
+    .minitimes, .singlepage .bottomthread .infotext a {
+        font-size: 0.4rem;
+    }
+
+    .singlepage .topthread h1, .singlepage .topthread .infohead {
+        font-size: 1.25rem;
+    }
+
+    .singlepage .topthread .infotext, .singlepage .bottomthread .infotext p, .singlepage .bottomthread .reel .photos p, .singlepage .comment p {
+        font-size: 0.75rem;
+    }
+
+    .singlepage .topthread .biginfo p {
+        font-size: 1rem;
+    }
+
+    .singlepage .bottomthread .reel {
+        width: 50%;
+        grid-template-columns: 1fr;
+        place-self: center;
+    }
+
+    .singlepage .comment input {
+        width: 50%;
+    }
+    
 }
 
 @media screen and (max-width:500px){
@@ -237,6 +289,18 @@
     main .sign article .left .subbutton p {
         min-width: 0px;
         max-width: 100px;
+    }
+
+    main .about .bottomright .contact input {
+        width: 150px;
+    }
+
+    .singlepage .topthread {
+        width: 90%;
+    }
+
+    .singlepage .topthread .toptier .icons {
+        font-size: 0.75rem;
     }
 }
 
@@ -265,7 +329,7 @@
         row-gap: 0px;
     }
     
-    .secondpage .info aside img, main .about .topright article h1, main .about .bottomright article h1, main .about .topright article p{
+    .secondpage .info aside img, main .about .topright article h1, main .about .bottomright article h1, main .about .topright article p {
         max-width: 240px;
     }
 
@@ -279,5 +343,37 @@
 
     main .about .topright article h1 {
         min-width: 0px;
+    }
+
+    main .about .topleft {
+        background-position: top;
+    }
+
+    main .about .bottomleft {
+        background-position: 50% 26%;
+        margin-bottom: 20px;
+    }
+
+    .singlepage {
+        width: 240px;
+        margin: 0px;
+    }
+
+    .singlepage .topthread img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .singlepage .bottomthread .reel {
+        place-self: start;
+    }
+
+    .singlepage .bottomthread .reel .photos img {
+        width: 200px;
+        height: 150px;
+    }
+    
+    .singlepage .topthread .toptier .icons {
+        font-size: 0.5rem;
     }
 }
