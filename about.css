@@ -56,7 +56,7 @@ main .about .topright article h1, main .about .bottomright article h1{
     font-size: 2.375rem;
     font-weight: 600;
     word-spacing: 0.2rem;
-    min-width: 440px;
+    /* min-width: 440px; */
 
 }
 

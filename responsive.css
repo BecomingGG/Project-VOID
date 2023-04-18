@@ -5,15 +5,7 @@
     --hover-color: #E7222c;
 }
 
-@media screen and (max-width: 1300px){
-    main .carousel {
-        display: block;
-        width: 80%;
-    }
-    main .information {
-        display: none;
-    }
-
+@media screen and (max-width: 1480px){
     main .info {
         grid-template-columns: 1fr 1fr;
         height: 100%;
@@ -23,6 +15,23 @@
         max-width: 50%;
     }
 
+}
+
+
+@media screen and (max-width: 1300px){
+    main .carousel {
+        display: block;
+        width: 80%;
+    }
+
+    .carousel .carousel-item img {
+        object-fit: contain;
+    }
+
+    main .information {
+        display: none;
+    }
+
     main .popular aside {
         max-width: 800px;
         max-height: 640px;
@@ -30,7 +39,7 @@
 
     main .popular aside img {
         height: 70%;
-        width: 70%;
+        width: 90%;
     }
 
     footer {
@@ -61,13 +70,18 @@
     .singlepage .bottomthread {
         width: 90%;
     }
+
     .singlepage .topthread {
         width: 70%;
+    }
+
+    main .about .topright {
+        margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 800px){
-    header nav .button, header nav .checkbtn, header .nav-items  span .logo, header .nav-items .checkbtn, header .nav-items .bottom .right, header .nav-items .top, header .nav-items .bottom .left .social, header .nav-items .bottom .right {
+ header nav .button, header nav .checkbtn, header .nav-items  span .logo, header .nav-items .checkbtn, header .nav-items .bottom .right, header .nav-items .top, header .nav-items .bottom .left .social, header .nav-items .bottom .right {
         display: none;
     }    
     
@@ -105,9 +119,11 @@
 
     header .nav-items .bottom {
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-top: 5%;
     }
 
     header .nav-items .bottom .left {
@@ -177,6 +193,10 @@
         max-width: 400px;
     }
 
+    main .popular aside a p{
+        margin: 30px 0px;
+    }
+
     main .sign {
         height: 960px;
     }
@@ -232,11 +252,6 @@
         width: 500px;
     }
 
-    .singlepage .topthread img {
-        width: 320px;
-        height: 286px;
-    }
-
     .minitimes, .singlepage .bottomthread .infotext a {
         font-size: 0.4rem;
     }
@@ -262,6 +277,20 @@
     .singlepage .comment input {
         width: 50%;
     }
+
+    main .about .bottomright article, main .about .topright article{
+        display: block;
+    }
+
+    main .about .topleft {
+        background-position: 50% 0%;
+    }
+
+    main .about .bottomleft {
+        grid-row: 2;
+        background-attachment: scroll;
+        background-position: 50% 38%;
+    }
     
 }
 
@@ -277,7 +306,8 @@
 
     main .popular aside img {
         max-width: 250px;
-        max-height: 260px; ;
+        max-height: 355px;
+        object-fit: cover;
     }
     main .popular aside a p {
         display: none;
@@ -307,9 +337,8 @@
         max-width: 260px;
         min-width: 0px;
     }
-    main .info aside {
-        max-width: 260px;
-        align-items: start;
+    main .info aside a {
+        margin-bottom: 3rem;
     }
 }
 
@@ -330,6 +359,10 @@
         font-size: 0.5rem;
     }
 
+    main .popular aside img {
+        width: 85%;
+    }
+
     main .sign {
         margin-top: 120px;
     }
@@ -340,10 +373,6 @@
     
     .secondpage .info aside img, main .about .topright article h1, main .about .bottomright article h1, main .about .topright article p {
         max-width: 240px;
-    }
-
-    main .about .bottomright article, main .about .topright article{
-        display: block;
     }
 
     main .about .bottomleft, main .about .topleft {
@@ -366,11 +395,6 @@
     .singlepage {
         width: 240px;
         margin: 0px;
-    }
-
-    .singlepage .topthread img {
-        width: 260px;
-        height: 200px;
     }
 
     .singlepage .bottomthread .reel {

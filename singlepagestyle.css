@@ -61,9 +61,10 @@
 }
 
 .singlepage .topthread img {
-    width: 819.2px;
-    height: 661px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .singlepage .topthread .biginfo {
@@ -104,8 +105,10 @@
 }
 
 .singlepage .bottomthread .reel .photos img {
-    width: 290px;
+    width: 100%;
     height: 163px;
+    object-fit: cover;
+    object-position: 0% 70%;
 }
 
 .singlepage .bottomthread .reel .photos p {
